@@ -1,15 +1,18 @@
-package SamplesConverter;
+package AudioSamplesConverter;
 
-public class SamplesConverter {
+public class AudioSamplesConverter {
     private final int samplesPerSegment;
     private final byte[] buffer;
     private final double[] samples;
 
-    public SamplesConverter(int samplesPerSegment, byte[] buffer, double[] samples) {
+    public AudioSamplesConverter(int samplesPerSegment, byte[] buffer, double[] samples) {
+        if (samplesPerSegment <= 0 || buffer == null || samples == null || buffer.length != samplesPerSegment * 2 || samples.length != samplesPerSegment) {
+            throw new IllegalArgumentException("Parámetros de entrada inválidos");
+        }
+
         this.samplesPerSegment = samplesPerSegment;
         this.buffer = buffer;
         this.samples = samples;
-
     }
 
     public void convertSamples() {

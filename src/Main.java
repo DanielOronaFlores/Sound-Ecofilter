@@ -1,6 +1,6 @@
 import AudioFileData.AudioFileData;
 import RootMeanSquare.RootMeanSquare;
-import SamplesConverter.SamplesConverter;
+import AudioSamplesConverter.AudioSamplesConverter;
 
 import javax.sound.sampled.*;
 import java.io.ByteArrayOutputStream;
@@ -27,7 +27,7 @@ public class Main {
         int totalSamples = 0;
         double thresholdMultiplier = 1.0;
 
-        SamplesConverter samplesConverter = new SamplesConverter(samplesPerSegment, buffer, samples);
+        AudioSamplesConverter samplesConverter = new AudioSamplesConverter(samplesPerSegment, buffer, samples);
         while (audioStream.read(buffer) != -1) {
             samplesConverter.convertSamples();
             samples = samplesConverter.getSamples();
