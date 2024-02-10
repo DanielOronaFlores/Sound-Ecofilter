@@ -1,13 +1,9 @@
 import AudioFileData.AudioFileData;
-import RMS.RMS;
+import RootMeanSquare.RootMeanSquare;
 import SamplesConverter.SamplesConverter;
-import org.jtransforms.fft.DoubleFFT_1D;
 
 import javax.sound.sampled.*;
-import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -26,7 +22,7 @@ public class Main {
 
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
 
-        RMS rms = new RMS(1.0);
+        RootMeanSquare rms = new RootMeanSquare(1.0);
         double totalSumOfSquares = 0;
         int totalSamples = 0;
         double thresholdMultiplier = 1.0;

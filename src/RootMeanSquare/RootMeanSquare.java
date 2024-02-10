@@ -1,14 +1,14 @@
-package RMS;
+package RootMeanSquare;
 
 import java.util.Arrays;
 
-public class RMS {
+public class RootMeanSquare {
     private double totalSumOfSquares;
     private int totalSamples;
     private double sumOfSquares;
     private final double thresholdMultiplier;
 
-    public RMS(double thresholdMultiplier) {
+    public RootMeanSquare(double thresholdMultiplier) {
         this.thresholdMultiplier = thresholdMultiplier;
     }
 

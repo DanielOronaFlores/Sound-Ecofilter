@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f05c40f-d5ba-480f-9991-e9e682f81d5f" name="Changes" comment="Creation of the AudioFileData class">
-      <change afterPath="$PROJECT_DIR$/src/RMS/RMS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SamplesConverter/SamplesConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AudioFileData/AudioFileData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AudioFileData/AudioFileData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="9f05c40f-d5ba-480f-9991-e9e682f81d5f" name="Changes" comment="Creation of SamplesConverter and RMS classes." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +99,7 @@
       <workItem from="1707455518790" duration="1921000" />
       <workItem from="1707457483317" duration="380000" />
       <workItem from="1707458295505" duration="394000" />
-      <workItem from="1707525263362" duration="3309000" />
+      <workItem from="1707525263362" duration="3628000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of the AudioFileData class.">
       <option name="closed" value="true" />
@@ -139,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707457844002</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Creation of SamplesConverter and RMS classes.">
+      <option name="closed" value="true" />
+      <created>1707528867037</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707528867037</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +164,7 @@
     </ignored-roots>
     <MESSAGE value="Creation of the AudioFileData class." />
     <MESSAGE value="Creation of the AudioFileData class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creation of the AudioFileData class" />
+    <MESSAGE value="Creation of SamplesConverter and RMS classes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation of SamplesConverter and RMS classes." />
   </component>
 </project>
