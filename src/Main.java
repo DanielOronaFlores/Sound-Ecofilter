@@ -8,7 +8,6 @@ import javax.sound.sampled.*;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -39,7 +38,7 @@ public class Main {
             samplesConverter.convertSamples();
             samples = samplesConverter.getSamples();
 
-            rms = new RootMeanSquare();
+            rms = new RootMeanSquare(1.0);
             double sumOfSquares = rms.calculateRMS(samples);
             totalSumOfSquares += sumOfSquares;
             totalSamples += samplesPerSegment;
@@ -50,6 +49,12 @@ public class Main {
             filter = new FrequencyFilter(samplesPerSegment, samples, sampleRate);
             filter.filterLowerFrequenciesByHertz(300);
             samples = filter.getSamples();
+
+            double currentRMS = Math.sqrt(sumOfSquares / samplesPerSegment);
+            double threshold = rms.calculateAmplitudeThreshold(totalSumOfSquares, totalSamples);
+            samples = rms.removeAudioLowerByRMS(samples, currentRMS, threshold);
+
+
         }
     }
 }
