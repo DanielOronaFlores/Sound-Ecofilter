@@ -7,10 +7,6 @@ public class AudioFileData {
     private final File audioFile;
     private final double segmentDuration;
 
-    public AudioFileData(){
-        audioFile = null;
-        segmentDuration = 0;
-    }
     public AudioFileData(String audioFilePath, int segmentDuration) {
         audioFile = new File(audioFilePath);
         if (!audioFile.exists()) {
@@ -18,6 +14,7 @@ public class AudioFileData {
         }
         this.segmentDuration = segmentDuration;
     }
+
     public File getAudioFile() {
         return audioFile;
     }

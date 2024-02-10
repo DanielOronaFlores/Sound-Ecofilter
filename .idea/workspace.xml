@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f05c40f-d5ba-480f-9991-e9e682f81d5f" name="Changes" comment="Creation of the AudioFileData class." />
+    <list default="true" id="9f05c40f-d5ba-480f-9991-e9e682f81d5f" name="Changes" comment="Creation of the AudioFileData class">
+      <change afterPath="$PROJECT_DIR$/src/RMS/RMS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SamplesConverter/SamplesConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AudioFileData/AudioFileData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AudioFileData/AudioFileData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +25,23 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DanielOronaFlores&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="ba8a34da-1d97-403f-aa5d-c4b17b8b51e4" />
+        <option name="url" value="https://github.com/DanielOronaFlores/Sound-Ecofilter" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -43,7 +66,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/danny/IdeaProjects/AudioSignalProcessor/src",
+    "last_opened_file_path": "C:/Users/danny/IdeaProjects/sonidos",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,6 +103,9 @@
       <workItem from="1707449847786" duration="2369000" />
       <workItem from="1707452271521" duration="3193000" />
       <workItem from="1707455518790" duration="1921000" />
+      <workItem from="1707457483317" duration="380000" />
+      <workItem from="1707458295505" duration="394000" />
+      <workItem from="1707525263362" duration="3309000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of the AudioFileData class.">
       <option name="closed" value="true" />
@@ -97,7 +123,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707457166016</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Creation of the AudioFileData class">
+      <option name="closed" value="true" />
+      <created>1707457779428</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707457779428</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Creation of the AudioFileData class">
+      <option name="closed" value="true" />
+      <created>1707457844002</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707457844002</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +161,7 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Creation of the AudioFileData class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Creation of the AudioFileData class." />
+    <MESSAGE value="Creation of the AudioFileData class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation of the AudioFileData class" />
   </component>
 </project>
