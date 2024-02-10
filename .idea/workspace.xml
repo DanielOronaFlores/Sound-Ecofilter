@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f05c40f-d5ba-480f-9991-e9e682f81d5f" name="Changes" comment="removeAudioLowerByRMS in RootMeanSquare added.">
-      <change afterPath="$PROJECT_DIR$/src/BytesConverter/BytesConverter.java" afterDir="false" />
+    <list default="true" id="9f05c40f-d5ba-480f-9991-e9e682f81d5f" name="Changes" comment="BytesConverter class created and finished program.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FrequencyFilter/FrequencyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FrequencyFilter/FrequencyFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RootMeanSquare/RootMeanSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RootMeanSquare/RootMeanSquare.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +105,7 @@
       <workItem from="1707455518790" duration="1921000" />
       <workItem from="1707457483317" duration="380000" />
       <workItem from="1707458295505" duration="394000" />
-      <workItem from="1707525263362" duration="10512000" />
+      <workItem from="1707525263362" duration="11299000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of the AudioFileData class.">
       <option name="closed" value="true" />
@@ -186,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707535254739</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="BytesConverter class created and finished program.">
+      <option name="closed" value="true" />
+      <created>1707536206278</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1707536206278</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +224,7 @@
     <MESSAGE value="Apply Fast Fourier Transform" />
     <MESSAGE value="RootMeanSquare fixed. FrequencyFilter created." />
     <MESSAGE value="removeAudioLowerByRMS in RootMeanSquare added." />
-    <option name="LAST_COMMIT_MESSAGE" value="removeAudioLowerByRMS in RootMeanSquare added." />
+    <MESSAGE value="BytesConverter class created and finished program." />
+    <option name="LAST_COMMIT_MESSAGE" value="BytesConverter class created and finished program." />
   </component>
 </project>

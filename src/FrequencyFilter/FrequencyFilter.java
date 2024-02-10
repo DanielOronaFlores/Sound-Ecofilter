@@ -1,11 +1,11 @@
 package FrequencyFilter;
 
 public class FrequencyFilter {
-    private int samplesPerSegment;
-    private double samples[];
+    private final int samplesPerSegment;
+    private final double[] samples;
     float sampleRate;
 
-    public FrequencyFilter(int samplesPerSegment, double samples[], float sampleRate) {
+    public FrequencyFilter(int samplesPerSegment, double[] samples, float sampleRate) {
         this.samplesPerSegment = samplesPerSegment;
         this.samples = samples;
         this.sampleRate = sampleRate;

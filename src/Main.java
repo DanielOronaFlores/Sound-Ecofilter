@@ -10,12 +10,11 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 
-
 public class Main {
     public static void main(String[] args) throws Exception {
         String audioFilePath = System.getProperty("user.dir") + "\\src\\audio.wav"; //Replace with the path to your audio file.
 
-        AudioFileData audioFileData = new AudioFileData(audioFilePath, 10);
+        AudioFileData audioFileData = new AudioFileData(audioFilePath, 1);
         AudioInputStream audioStream = AudioSystem.getAudioInputStream(audioFileData.getAudioFile());
 
         float sampleRate = audioStream.getFormat().getSampleRate();
