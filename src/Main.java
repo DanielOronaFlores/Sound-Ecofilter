@@ -1,10 +1,14 @@
 import AudioFileData.AudioFileData;
+import FrequencyFilter.FrequencyFilter;
 import RootMeanSquare.RootMeanSquare;
 import AudioSamplesConverter.AudioSamplesConverter;
 import org.jtransforms.fft.DoubleFFT_1D;
 
 import javax.sound.sampled.*;
+import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -23,7 +27,9 @@ public class Main {
 
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
 
-        RootMeanSquare rms = new RootMeanSquare(1.0);
+        RootMeanSquare rms;
+        FrequencyFilter filter;
+
         double totalSumOfSquares = 0;
         int totalSamples = 0;
         double thresholdMultiplier = 1.0;
@@ -33,14 +39,17 @@ public class Main {
             samplesConverter.convertSamples();
             samples = samplesConverter.getSamples();
 
-            rms.calculateRMS(samples, samplesPerSegment);
-            totalSumOfSquares = rms.getSumOfSquares();
-            totalSamples = rms.getTotalSamples();
-            double sumOfSquares = rms.getSumOfSquares();
+            rms = new RootMeanSquare();
+            double sumOfSquares = rms.calculateRMS(samples);
+            totalSumOfSquares += sumOfSquares;
+            totalSamples += samplesPerSegment;
 
             DoubleFFT_1D fft = new DoubleFFT_1D(samplesPerSegment);
             fft.realForward(samples);
 
+            filter = new FrequencyFilter(samplesPerSegment, samples, sampleRate);
+            filter.filterLowerFrequenciesByHertz(300);
+            samples = filter.getSamples();
         }
     }
 }
