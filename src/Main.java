@@ -1,6 +1,7 @@
 import AudioFileData.AudioFileData;
 import RootMeanSquare.RootMeanSquare;
 import AudioSamplesConverter.AudioSamplesConverter;
+import org.jtransforms.fft.DoubleFFT_1D;
 
 import javax.sound.sampled.*;
 import java.io.ByteArrayOutputStream;
@@ -36,6 +37,10 @@ public class Main {
             totalSumOfSquares = rms.getSumOfSquares();
             totalSamples = rms.getTotalSamples();
             double sumOfSquares = rms.getSumOfSquares();
+
+            DoubleFFT_1D fft = new DoubleFFT_1D(samplesPerSegment);
+            fft.realForward(samples);
+
         }
     }
 }

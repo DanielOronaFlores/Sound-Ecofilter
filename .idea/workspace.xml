@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f05c40f-d5ba-480f-9991-e9e682f81d5f" name="Changes" comment="Creation of SamplesConverter and RMS classes." />
+    <list default="true" id="9f05c40f-d5ba-480f-9991-e9e682f81d5f" name="Changes" comment="AudioSamplesConverter class cleaned.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +60,7 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/danny/IdeaProjects/sonidos",
@@ -99,7 +102,7 @@
       <workItem from="1707455518790" duration="1921000" />
       <workItem from="1707457483317" duration="380000" />
       <workItem from="1707458295505" duration="394000" />
-      <workItem from="1707525263362" duration="3628000" />
+      <workItem from="1707525263362" duration="4641000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of the AudioFileData class.">
       <option name="closed" value="true" />
@@ -141,7 +144,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707528867037</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="RootMeanSquare class cleaned.">
+      <option name="closed" value="true" />
+      <created>1707529082275</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707529082275</updated>
+    </task>
+    <task id="LOCAL-00007" summary="AudioSamplesConverter class cleaned.">
+      <option name="closed" value="true" />
+      <created>1707529261881</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707529261881</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +184,8 @@
     <MESSAGE value="Creation of the AudioFileData class." />
     <MESSAGE value="Creation of the AudioFileData class" />
     <MESSAGE value="Creation of SamplesConverter and RMS classes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Creation of SamplesConverter and RMS classes." />
+    <MESSAGE value="RootMeanSquare class cleaned." />
+    <MESSAGE value="AudioSamplesConverter class cleaned." />
+    <option name="LAST_COMMIT_MESSAGE" value="AudioSamplesConverter class cleaned." />
   </component>
 </project>
